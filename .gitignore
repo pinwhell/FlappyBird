@@ -30,3 +30,9 @@
 *.exe
 *.out
 *.app
+
+# Directories
+Debug/*
+Release/*
+SFML-2.4.2/*
+ipch/*
