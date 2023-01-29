@@ -60,6 +60,15 @@ namespace sermmor {
 			birdSprite.setRotation(rotation);
 			break;
 		case FLYING:
+		{
+			sf::Vector2f position = birdSprite.getPosition();
+
+			if ((position.y + (-FLYING_SPEED * dt)) < 0) // Does it Goes Out of Sky Bondaries?
+			{
+				position.y = 0;
+				birdSprite.setPosition(position); // Force to be in Bonaries
+			}
+
 			birdSprite.move(0, -FLYING_SPEED * dt);
 
 			rotation -= ROTATION_SPEED * dt;
@@ -67,6 +76,7 @@ namespace sermmor {
 				rotation = -25.0f;
 			birdSprite.setRotation(rotation);
 			break;
+		}
 		default:
 			break;
 		}
