@@ -5,6 +5,8 @@
 #include <iostream>
 #include "Game.h"
 
+sf::RenderStates const sf::RenderStates::Default;
+
 void HandleEvents(sf::RenderWindow &window);
 
 int main()

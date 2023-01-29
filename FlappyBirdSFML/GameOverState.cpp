@@ -28,14 +28,14 @@ namespace sermmor {
 		scoreText.setFont(data->assets.getFont(KEY_FONT_FLAPPY));
 		scoreText.setString(std::to_string(score));
 		scoreText.setCharacterSize(37);
-		scoreText.setFillColor(sf::Color::White);
+		scoreText.setFillColor(sf::Color(255, 255, 255, 255));
 		scoreText.setOrigin(scoreText.getGlobalBounds().width / 2, scoreText.getGlobalBounds().height / 2);
 		scoreText.setPosition(data->window.getSize().x / 10 * 7.25, data->window.getSize().y / 2.15);
 
 		highScoreText.setFont(data->assets.getFont(KEY_FONT_FLAPPY));
 		highScoreText.setString(std::to_string(highScore));
 		highScoreText.setCharacterSize(37);
-		highScoreText.setFillColor(sf::Color::White);
+		highScoreText.setFillColor(sf::Color(255, 255, 255, 255));
 		highScoreText.setOrigin(highScoreText.getGlobalBounds().width / 2, highScoreText.getGlobalBounds().height / 2);
 		highScoreText.setPosition(data->window.getSize().x / 10 * 7.25, data->window.getSize().y / 1.78);
 
